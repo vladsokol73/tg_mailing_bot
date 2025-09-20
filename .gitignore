@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+*.log
+
+# Keep these files
+!src/image_bot/static/*
+!requirements.txt
+!setup.py
+!alembic.ini
+!migrations/*

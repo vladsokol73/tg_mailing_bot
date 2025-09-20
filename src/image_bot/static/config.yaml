@@ -1,0 +1,67 @@
+# Общие настройки генерации
+generation_settings:
+  image_count: 5  # количество генерируемых изображений
+  number_ranges:
+    first_number:
+      min: 1
+      max: 5
+    second_number:
+      min: 1
+      max: 99
+
+# Настройки Telegram бота
+telegram:
+  token: "7948882435:AAHaCV8LJc4LDGj79rvVO7Q59GFWDQLsz-Y"
+
+main_number:
+  # Настройки для основного числа
+  font_settings:
+    path: "Inter_28pt-Bold.ttf"  # жирный Sans-serif
+    size: 192
+    color: [255, 255, 255]  # белый цвет
+  position:
+    type: "custom"
+    x_percent: 50
+    y_percent: 59
+
+subtracted_number:
+  # Процент вычитания из основного числа (от 25 до 60)
+  subtract_percent: 40
+  # Настройки отображения
+  font_settings:
+    path: "Inter_24pt-Regular.ttf"  # тонкий Sans-serif
+    size: 59  # размер в 2 раза меньше основного
+    color: [255, 255, 255]  # белый цвет
+  position:
+    type: "custom"
+    x_percent: 28
+    y_percent: 12
+
+multiplied_number:
+  # Множители для второго числа
+  multipliers: [100000, 200000, 300000]
+  # Настройки отображения
+  font_settings:
+    path: "Inter_28pt-ExtraBold.ttf"  # обычный Sans-serif
+    size: 64  # размер в 2.5 раза меньше основного
+    color: [255, 255, 255]  # белый цвет
+    shadow:
+      enabled: true
+      offset: [1, 3]  # смещение тени по x и y в пикселях
+      color: [0, 0, 0]  # цвет тени (черный)
+      blur: 3  # размытие тени
+  position:
+    type: "custom"
+    x_percent: 62
+    y_percent: 11.5
+
+fail_image:
+  base_image: "base_fail.png"  # отдельный файл картинки для неудачных попыток
+  font_settings:
+    path: "Inter_28pt-Bold.ttf"  # жирный Sans-serif
+    size: 192
+    color: [255, 0, 0]  # красный цвет
+  position:
+    type: "custom"
+    x_percent: 50
+    y_percent: 43
